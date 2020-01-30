@@ -11,4 +11,6 @@ Zulu is a build of OpenJDK 8 from https://www.azulsystems.com/products/zulu/down
 `Hello.class` was built with OpenJDK 13.0.2 with `javac Hello.java`.
 
 * `go build` builds `gojure`.
-* `./gojure Hello` executes `Hello.class` and outputs "hello".
+* `./gojure Hello` executes `Hello.class` and outputs "Hello from Java from within Go".
+
+Just running `./run.sh` is also possible.
