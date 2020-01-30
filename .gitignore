@@ -14,6 +14,6 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-*.class
+#*.class
 
 zulu8.44.0.11-ca-jdk8.0.242-linux_x64.tar.gz
