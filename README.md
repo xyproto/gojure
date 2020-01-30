@@ -63,6 +63,6 @@ main.main()
 
 Apparently, `java/util/TimeZone.getSystemTimeZoneID` is missing. This might be due to misconfiguration, or something else.
 
-It could be because `-Dclojure.libfile` is ignored right now.
+`main.go` was modified to ignore `-Dclojure.libfile` because there were no obvious place to direct that value into `jvm.go`.
 
 I'll just leave the project as "work in progress" at this point.
