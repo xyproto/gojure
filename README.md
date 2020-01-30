@@ -2,7 +2,7 @@
 
 The idea is to run Clojure within Go, using [zxh0/jvm.go](https://github.com/zxh0/jvm.go).
 
-`main.go` is from `jvm.go` and only slightly modified.
+`main.go` is from [zxh0/jvm.go](https://github.com/zxh0/jvm.go) and only slightly modified.
 
 Zulu is a build of OpenJDK 8 from https://www.azulsystems.com/products/zulu/downloads, as [recommended by `jvm.go`](https://github.com/zxh0/jvm.go#run-jvmgo-using-zulu).
 
