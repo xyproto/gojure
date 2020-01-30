@@ -1,3 +1,5 @@
 zulu*.tar.gz
 *.class
 gojure
+jre
+zulu8.*/
