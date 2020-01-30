@@ -5,20 +5,20 @@
 ZULU := zulu8.44.0.11-ca-jdk8.0.242-linux_x64
 
 $(ZULU):
-	curl -O 'https://cdn.azul.com/zulu/bin/$@.tar.gz' && \
-	  tar zxvf "$@.tar.gz" && \
+	@curl -O 'https://cdn.azul.com/zulu/bin/$@.tar.gz' && \
+	  tar zxf "$@.tar.gz" && \
 	  rm "$@.tar.gz"
 
-jre: $(ZULU)
-	ln -sf $(ZULU)/jre
+jre: | $(ZULU)
+	@ln -sf $(ZULU)/jre
 
 Hello.class:
-	javac Hello.java
+	@javac Hello.java
 
 gojure:
-	go build
+	@go build
 
-run: Hello.class jre gojure
+run: jre Hello.class gojure
 	@./gojure Hello
 
 clean:
