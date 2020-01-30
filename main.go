@@ -69,7 +69,13 @@ func parseOptions() (*vm.Options, []string) {
 	flag.BoolVar(&options.XUseJavaHome, "XuseJavaHome", false, "Uses JAVA_HOME to find JRE path.")
 	flag.BoolVar(&options.XDebugInstr, "Xdebug:instr", false, "Displays executed instructions.")
 	flag.StringVar(&options.XCPUProfile, "Xprofile:cpu", "", "")
+	var define string
+	flag.StringVar(&define, "Dclojure.libfile", "", "Define for clojure.libfile")
 	flag.Parse()
+
+	if define != "" {
+		fmt.Printf("Got a define: %s\n", define)
+	}
 
 	args := flag.Args()
 	options.Init()
